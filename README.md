@@ -22,6 +22,10 @@ This project is a responsive website that showcases a social media profile page 
 - Semantic HTML structure
 - BEM methodology for CSS organization
 
+## Project Video
+
+https://drive.google.com/file/d/1ZoA5thZDpriCPrS8YAN4racf_VJplf-n/view?usp=sharing
+
 ## GitHub Pages
 
 https://ldantinne30.github.io/se_project_spots/
