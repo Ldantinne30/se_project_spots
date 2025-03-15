@@ -6,7 +6,7 @@
   height: 413px;
   width: 413px;
   display: block;
-  border-radius: 10px;
+  border-radius: 8px;
   object-fit: cover;
 }
 
@@ -18,8 +18,10 @@
 }
 
 .card__title {
+  margin: 0;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 500;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -35,6 +37,23 @@
 }
 
 @media screen and (max-width: 627px) {
+  .card {
+    max-width: 288px;
+  }
+
+  .card__image {
+    height: 288px;
+    width: 288px;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .card__title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 100%;
+  }
+
   .card__content {
     margin: 0;
   }
