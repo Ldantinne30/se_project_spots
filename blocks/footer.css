@@ -1,7 +1,8 @@
 .footer {
   background: inherit;
-  width: 100%;
+  width: 1280px;
   padding: 60px;
+  margin: auto;
 }
 
 .footer__copyright {
