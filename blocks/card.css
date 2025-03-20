@@ -27,7 +27,7 @@
   white-space: nowrap;
   overflow: hidden;
   color: #212121;
-  max-width: 420px;
+  max-width: 413px;
 }
 
 .card__like-btn {
@@ -41,6 +41,7 @@
 
 .card__like-btn:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 @media screen and (max-width: 627px) {

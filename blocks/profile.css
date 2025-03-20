@@ -31,7 +31,7 @@
   margin: 12px 0 0;
   font-size: 16px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 20px;
   opacity: 0.7;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -53,7 +53,7 @@
   font-size: 16px;
   font-weight: 500;
   color: #212121;
-  line-height: 100%;
+  line-height: 20px;
   margin-top: auto;
   gap: 8px;
   opacity: 0.7;
@@ -65,6 +65,7 @@
 
 .profile__edit-btn:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 .profile__post-btn {
@@ -72,7 +73,7 @@
   margin-top: auto;
   font-size: 16px;
   font-weight: 500;
-  line-height: 100%;
+  line-height: 20px;
   background: #212121;
   color: #fcf5e5;
   border-radius: 8px;
@@ -89,6 +90,7 @@
 
 .profile__post-btn:hover {
   cursor: pointer;
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 627px) {
@@ -109,7 +111,7 @@
     margin-top: 12px;
     max-width: 288px;
     font-size: 20px;
-    line-height: 16px;
+    line-height: 20px;
   }
 
   .profile__description {
