@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 0 20px;
-  padding-top: 12px;
+  padding: 20px 12px;
 }
 
 .card__title {
@@ -27,7 +27,7 @@
   white-space: nowrap;
   overflow: hidden;
   color: #212121;
-  max-width: 413px;
+  max-width: 353px;
 }
 
 .card__like-btn {
