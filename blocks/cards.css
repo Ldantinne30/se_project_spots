@@ -1,6 +1,5 @@
 .cards {
   max-width: 1280px;
-  padding-top: 20px;
 }
 
 .cards__list {
@@ -19,5 +18,6 @@
   .cards__list {
     margin: 20px 0 0;
     grid-template-columns: repeat(1, 288px);
+    padding-bottom: 20px;
   }
 }
