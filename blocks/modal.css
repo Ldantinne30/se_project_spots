@@ -36,7 +36,7 @@
   right: 50px;
   width: 40px;
   height: 40px;
-  background: url(../images/close-icon.svg);
+  background: url(../images/blk-close-icon.svg);
   color: #212121;
   opacity: 0.4;
   border: none;
@@ -73,12 +73,17 @@
   padding: 16px 12px;
   border: 1px;
   border-style: solid;
-  border-color: #212121;
+  border-color: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   font-size: 20px;
-  font-weight: 500px;
-  color: #212121;
-  opacity: 0.4;
+  font-weight: 500;
+  color: #000000;
+}
+
+.modal__input:hover {
+  cursor: pointer;
+  opacity: 1;
+  border-color: rgba(0, 0, 0, 1);
 }
 
 .modal__submit-btn {
