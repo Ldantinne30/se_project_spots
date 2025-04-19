@@ -80,3 +80,8 @@ addCardFormEl.addEventListener("submit", handleAddCardSubmit);
 function closeModal(modalEl) {
   modalEl.classList.remove("modal_is-opened");
 }
+
+initialCards.forEach(function (item) {
+  console.log(item.name);
+  console.log(item.link);
+});
