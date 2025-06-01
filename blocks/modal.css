@@ -69,6 +69,10 @@
   opacity: 0.4;
 }
 
+.modal__form {
+  font-size: 16px;
+}
+
 .modal__title {
   margin: 0 0 32px;
   padding: 4px 0;
@@ -98,6 +102,11 @@
   font-size: 20px;
   font-weight: 500;
   color: #212121;
+}
+
+.modal__input_type_error {
+  opacity: 0.6;
+  border: 1px solid red;
 }
 
 .modal__input:hover {
@@ -142,6 +151,19 @@
   position: absolute;
   left: 0;
   top: calc(100% + 10px);
+}
+
+.button_inactive {
+  color: #212121;
+  opacity: 0.5;
+  cursor: not-allowed;
+  transition: color 0.3s ease;
+}
+
+.modal__error {
+  color: red;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 488px) {
