@@ -1,3 +1,5 @@
+import { settings, resetValidation } from "./validation.js";
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -105,7 +107,11 @@ function closeModal(modal) {
 editProfileBtn.addEventListener("click", function () {
   editProfileName.value = profileNameEl.textContent;
   editProfileDescription.value = profileDescriptionEl.textContent;
-  resetValidation(editProfileForm, [editProfileName, editProfileDescription]);
+  resetValidation(
+    editProfileForm,
+    [editProfileName, editProfileDescription],
+    settings
+  );
   openModal(editProfileModal);
 });
 
@@ -152,7 +158,7 @@ initialCards.forEach(function (item) {
 
 document.addEventListener("keydown", (evt) => {
   if (evt.key === "Escape") {
-    const openModal = document.querySelector(".modal_opened");
+    const openModal = document.querySelector(".modal_is-opened");
     if (openModal) {
       closeModal(openModal);
     }
