@@ -129,28 +129,41 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-
   const inputValues = {
     name: cardCaptionInput.value,
     link: cardImageInput.value,
   };
-
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
-
-  // Reset the form that triggered the submit
   evt.target.reset();
-
-  // Disable the submit button after reset
-  disableButton(cardSubmitBtn);
-
-  // Close the modal
-  console.log("About to close modal");
+  const inputList = Array.from(
+    evt.target.querySelectorAll(settings.inputSelector)
+  );
+  resetValidation(evt.target, inputList, settings);
   closeModal(newPostModal);
 }
+
 addCardFormEl.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
+});
+
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
+    const openModal = document.querySelector(".modal_opened");
+    if (openModal) {
+      closeModal(openModal);
+    }
+  }
+});
+
+const modals = document.querySelectorAll(".modal");
+modals.forEach((modal) => {
+  modal.addEventListener("mousedown", (evt) => {
+    if (evt.target === modal) {
+      closeModal(modal);
+    }
+  });
 });
