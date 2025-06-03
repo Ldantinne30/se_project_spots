@@ -125,6 +125,11 @@
   cursor: pointer;
 }
 
+.modal__submit-btn:hover {
+  background: #212121;
+  transition: background-color 0.3s ease;
+}
+
 .modal__image-container {
   position: relative;
   overflow: visible;
