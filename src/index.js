@@ -1,4 +1,7 @@
 import { settings, resetValidation, disableButton } from "./validation.js";
+import "./pages/index.css";
+import "./images/favicon.ico";
+import "core-js";
 
 const initialCards = [
   {
